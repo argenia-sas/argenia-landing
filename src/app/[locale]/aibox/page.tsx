@@ -1,5 +1,5 @@
 import Image from "next/image";
-import minipc from "@/public/assets/minipc.jpeg";
+import minipc from "@/public/assets/minipc.png";
 
 export default function AIBoxPage() {
   return (
