@@ -116,11 +116,12 @@ export default function AIBoxPage() {
                 border: "1px solid rgba(255, 255, 255, 0.1)",
               }}
             >
-              <div className="bg-black/50 rounded-xl h-64 md:h-96 flex items-center justify-center overflow-hidden">
+              <div className="relative bg-black/50 rounded-xl h-64 md:h-96 overflow-hidden">
                 <Image
                   src={minipc}
                   alt="Argenia AI-Box Mini PC"
-                  className="object-contain h-full w-full"
+                  fill
+                  className="object-cover object-center"
                 />
               </div>
             </div>
