@@ -1,6 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Script from "next/script";
 import minipc from "@/public/assets/minipc.png";
+
+function gtagReportConversion(url: string) {
+  const callback = () => {
+    window.location.href = url;
+  };
+  if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+    (window as any).gtag("event", "conversion", {
+      send_to: "AW-16573553430/Oi0ZCK743awcEJa28d49",
+      event_callback: callback,
+    });
+  } else {
+    callback();
+  }
+  return false;
+}
 
 export default function HermetiaPage() {
   return (
@@ -278,6 +295,7 @@ export default function HermetiaPage() {
                 href="https://wa.me/5493416559834"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => { e.preventDefault(); gtagReportConversion("https://wa.me/5493416559834"); }}
                 className="flex items-center gap-3 text-2xl hover:text-green-400 transition"
               >
                 <i className="fab fa-whatsapp" /> +54 9 341 6559834
