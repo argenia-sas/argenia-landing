@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 import minipc from "@/public/assets/minipc.png";
 
 export default function HermetiaPage() {
@@ -9,6 +10,20 @@ export default function HermetiaPage() {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       />
+
+      {/* Google tag (gtag.js) */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-16573553430"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-16573553430');
+        `}
+      </Script>
 
       <div className="bg-black text-white font-sans selection:bg-blue-500">
         {/* Navbar */}
