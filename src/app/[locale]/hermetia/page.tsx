@@ -4,13 +4,13 @@ import Image from "next/image";
 import Script from "next/script";
 import minipc from "@/public/assets/minipc.png";
 
-function gtagReportConversion(url: string) {
+function gtagReportConversion(url: string, sendTo: string) {
   const callback = () => {
     window.location.href = url;
   };
   if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
     (window as any).gtag("event", "conversion", {
-      send_to: "AW-16573553430/Oi0ZCK743awcEJa28d49",
+      send_to: sendTo,
       event_callback: callback,
     });
   } else {
@@ -295,13 +295,14 @@ export default function HermetiaPage() {
                 href="https://wa.me/5493416559834"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={(e) => { e.preventDefault(); gtagReportConversion("https://wa.me/5493416559834"); }}
+                onClick={(e) => { e.preventDefault(); gtagReportConversion("https://wa.me/5493416559834", "AW-16573553430/Oi0ZCK743awcEJa28d49"); }}
                 className="flex items-center gap-3 text-2xl hover:text-green-400 transition"
               >
                 <i className="fab fa-whatsapp" /> +54 9 341 6559834
               </a>
               <a
                 href="mailto:argenia.sas@gmail.com"
+                onClick={(e) => { e.preventDefault(); gtagReportConversion("mailto:argenia.sas@gmail.com", "AW-16573553430/zNAvCP3exKwcEJa28d49"); }}
                 className="flex items-center gap-3 text-2xl hover:text-blue-400 transition"
               >
                 <i className="far fa-envelope" /> argenia.sas@gmail.com
