@@ -1,7 +1,7 @@
 import Image from "next/image";
 import minipc from "@/public/assets/minipc.png";
 
-export default function AIBoxPage() {
+export default function HermetiaPage() {
   return (
     <>
       {/* Font Awesome CDN */}
@@ -26,7 +26,7 @@ export default function AIBoxPage() {
             </div>
             <span className="text-xl font-bold tracking-tight">
               ARGENIA{" "}
-              <span className="text-blue-500 font-light">AI-BOX</span>
+              <span className="text-blue-500 font-light">HERMETIA</span>
             </span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-gray-300">
@@ -82,7 +82,7 @@ export default function AIBoxPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-              AI-Box es el servidor todo-en-uno que lleva la potencia de la
+              Hermetia es el servidor todo-en-uno que lleva la potencia de la
               Inteligencia Artificial a tu red local. Sin nubes, sin
               suscripciones y sin filtraciones.
             </p>
@@ -119,7 +119,7 @@ export default function AIBoxPage() {
               <div className="relative bg-black/50 rounded-xl h-64 md:h-96 overflow-hidden">
                 <Image
                   src={minipc}
-                  alt="Argenia AI-Box Mini PC"
+                  alt="Argenia Hermetia Mini PC"
                   fill
                   className="object-cover object-center"
                 />
@@ -167,7 +167,7 @@ export default function AIBoxPage() {
               }}
             >
               <h3 className="text-2xl font-bold mb-4 italic">
-                AI-Box lo resuelve:
+                Hermetia lo resuelve:
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
                 Instalamos un nodo físico en tu oficina. Todo el procesamiento
