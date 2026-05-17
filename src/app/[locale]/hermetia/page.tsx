@@ -292,13 +292,13 @@ export default function HermetiaPage() {
 
             <div className="flex flex-col md:flex-row gap-8 justify-center items-center mb-16">
               <a
-                href="https://wa.me/5493416559834"
+                href="https://wa.me/5493415964828"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={(e) => { e.preventDefault(); gtagReportConversion("https://wa.me/5493416559834", "AW-16573553430/Oi0ZCK743awcEJa28d49"); }}
+                onClick={(e) => { e.preventDefault(); gtagReportConversion("https://wa.me/5493415964828", "AW-16573553430/Oi0ZCK743awcEJa28d49"); }}
                 className="flex items-center gap-3 text-2xl hover:text-green-400 transition"
               >
-                <i className="fab fa-whatsapp" /> +54 9 341 6559834
+                <i className="fab fa-whatsapp" /> +54 9 341 5964828
               </a>
               <a
                 href="mailto:argenia.sas@gmail.com"

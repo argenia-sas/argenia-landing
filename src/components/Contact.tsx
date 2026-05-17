@@ -42,12 +42,12 @@ export default function Contact() {
                   {whatsapp}
                 </RenderText>
                 <a
-                  href="https://wa.me/+5493416559834" // Reemplaza con el número de WhatsApp real
+                  href="https://wa.me/+5493415964828"
                   className="text-argPrimary1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  +54 9 341 6559834
+                  +54 9 341 5964828
                 </a>
               </p>
             </div>
